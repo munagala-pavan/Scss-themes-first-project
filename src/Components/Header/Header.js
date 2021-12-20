@@ -1,4 +1,5 @@
-import img from "../cooking-daires.png";
+import img from "../../image/cooking-daires.png";
+
 import "./Header.css";
 
 
