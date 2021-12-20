@@ -1,8 +1,6 @@
 import React from 'react';
-import Header from './components/Header/Header';
-import  Footer from './components/Footer/Footer';
+import Header from './Components/Header/Header';
 import './App.css';
-import PageSideBar from './components/sideBar/pageSideBar';
 
 
 
@@ -10,8 +8,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <PageSideBar/>
-      <Footer />
+    
    </div>
  
   );

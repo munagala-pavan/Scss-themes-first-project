@@ -1,12 +1,11 @@
 import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
-
 import "./pageSideBar.scss";
 
-const PageSideBar = () => {
+const PageSideBar = (props) => {
   return (
-    <div className="App">
+    <div className="App" style={{backgroundColor:props.backgroundcolor}}>
       <Tabs>
         <TabList>
           <Tab>
@@ -27,7 +26,7 @@ const PageSideBar = () => {
         </TabList>
 
         <TabPanel>
-          <div className="panel-content">
+          <div className="panel-content" >
             <p>
               <strong>
                 <h2>
