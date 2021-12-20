@@ -22,10 +22,10 @@ return(
   <li><a href="/">Global</a></li>
   <li><a href="/">About Us</a></li>
    <select id="color-theme" name="color-theme" value={colors} style={{backgroundColor:colors}} onChange={handleDropDown}>
-      <option value="red" >theme 1</option>
-      <option value="blue">theme 2</option>
-      <option value="green">theme 3</option>
-      <option value="yellow">theme 4</option>
+      <option value="CornflowerBlue" >CornflowerBlue</option>
+      <option value="Purple">Purple</option>
+      <option value="DeepPink">DeepPink</option>
+      <option value="Coral">Coral</option>
       </select>
 </ul>
       <PageSideBar/>

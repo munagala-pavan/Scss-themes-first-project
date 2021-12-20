@@ -1,80 +1,28 @@
-import React from 'react';
+import React from "react";
 
-//import './Footer.css';
-
-
-
+import "./Footer.css";
 function Footer(props) {
-    return (
-        <section className="footer">
-            
-            <hr id="footer-seperator" />
-            <section className="footer-social-media" >
-                <a href="/" target="_blank" rel="noopener noreferrer" style={{color:props.styled}}>Cooking-Dairy</a>
-                <p>MyRecipes.com is part of the Allrecipes Food Group. © Copyright 2021 Meredith Corporation. MyRecipes is a registered trademark of Meredith Corporation All Rights Reserved. MyRecipes may receive compensation for some links to products and services on this website. Offers may be subject to change without notice.</p>
-            </section>
+  return (
+    <section className="footer" style={{backgroundColor:props.styled}}>
+      <div className="links">
+        <a href="#" >Cooking-daires</a>
+        <p>
+          MyRecipes.com is part of the Allrecipes Food Group. © Copyright 2021
+          Cooking-daires Corporation. MyRecipes is a registered trademark of
+          Cooking-daires Corporation All Rights Reserved. MyRecipes may receive
+          compensation for some links to products and services on this website.
+          Offers may be subject to change without notice.
+        </p>
+      </div>
 
-            <section>
-            <a href="/" target="_blank" rel="noopener noreferrer" style={{color:props.styled}}>Privacy Policy</a>
-            </section>
-
-            <section>
-            <a href="/" target="_blank" rel="noopener noreferrer" style={{color:props.styled}}>Terms and Service</a>
-            </section>
-
-            <section>
-            <a href="/" target="_blank" rel="noopener noreferrer" style={{color:props.styled}}>Add Choices</a>
-            </section>
-
-            <section>
-            <a href="/" target="_blank" rel="noopener noreferrer" style={{color:props.styled}}>Web accesibility</a>
-            </section>
-
-
-             
-
-            {/* <section className="footer-info">
-
-                <section className="footer-info-left">
-                    <section className="footer-info__name">
-                        SW
-                    </section>
-                    <section className="footer-info__returns">
-                        Returns POLICY
-                        <br />
-                        Delivery
-                    </section>
-                    </section>
-
-                    <section className="footer-info-center">
-                        <section className="footer-info__email">
-                            cook.info@gmail.com
-                        </section>
-                     <section className="footer-info__terms">
-                         Terms and Conditions
-                         <br />
-                         &&Copyright
-                     </section>
-                    </section>
-
-                    <section className="footer-info-right">
-                        <section className="footer-info__number">
-                            99999999999
-                        </section>
-                        <section className="footer-info__contact">
-                            My Stroy
-                            <br />
-                            Contact Us
-                        </section>
-                    </section>
-
-                </section>
-                <hr className="footer-seperator" />
-            </section>
-      */}
+      <div className="links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms and Service</a>
+        <a href="#">Add Choices</a>
+        <a href="#">Web accesibility</a>
+      </div>
       <hr className="footer-seperator" />
-      </section>
-
+    </section>
   );
-};
+}
 export default Footer;

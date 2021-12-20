@@ -9,7 +9,7 @@
   .react-tabs {
     padding-top: 80px;
     // align-items: center;
-    padding-left: 80px;
+   padding-left: 80px;
     display: flex;
     margin-left: 36px;
     width: 1000px;
@@ -48,6 +48,7 @@
   .react-tabs__tab-panel {
     display: none;
     width: 800px;
+    padding-left: 30px;
   }
   
   .react-tabs__tab-panel--selected {
