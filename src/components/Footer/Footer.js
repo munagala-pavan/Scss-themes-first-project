@@ -1,6 +1,5 @@
 import React from "react";
-
-import "./Footer.css";
+import "../../scss/main.scss";
 function Footer(props) {
   return (
     <section className="footer" style={{backgroundColor:props.styled}}>
@@ -21,7 +20,7 @@ function Footer(props) {
         <a href="#">Add Choices</a>
         <a href="#">Web accesibility</a>
       </div>
-      <hr className="footer-seperator" />
+      {/* <hr className="footer-seperator" /> */}
     </section>
   );
 }

@@ -2,7 +2,7 @@ import { useState } from "react";
 import img from "../../image/cooking-daires.png";
 import Footer from "../Footer/Footer";
 import PageSideBar from "../sideBar/pageSideBar";
-import "./Header.css";
+import "../../scss/main.scss";
 
 
 const Header=()=>{
@@ -13,7 +13,7 @@ const Header=()=>{
   console.log(colors);
 return(
 <div>
-<ul style={{backgroundColor:colors}}>
+<ul style={{backgroundColor:colors}} id="headers">
     <li><img src={img} alt="logo" /></li>
   <li> <h3>Cooking Dairies</h3></li>  
   <li><a href="/">Home</a></li>
@@ -21,11 +21,13 @@ return(
   <li><a href="/">Healthy</a></li>
   <li><a href="/">Global</a></li>
   <li><a href="/">About Us</a></li>
-   <select id="color-theme" name="color-theme" value={colors} style={{backgroundColor:colors}} onChange={handleDropDown}>
-      <option value="CornflowerBlue" >CornflowerBlue</option>
-      <option value="Purple">Purple</option>
-      <option value="DeepPink">DeepPink</option>
-      <option value="Coral">Coral</option>
+   <select id="color-theme" name="color-theme" value={colors}  onChange={handleDropDown}>
+      {/* //<option>Theme color</option> */}
+      <option value="none" selected hidden>Select an Option</option>
+      <option value="CornflowerBlue" style={{backgroundColor:"CornflowerBlue"}}>CornflowerBlue</option>
+      <option value="Purple" style={{backgroundColor:"Purple"}} >Purple</option>
+      <option value="DeepPink" style={{backgroundColor:"DeepPink"}}>DeepPink</option>
+      <option value="Coral" style={{backgroundColor:"Coral"}}>Coral</option>
       </select>
 </ul>
       <PageSideBar/>

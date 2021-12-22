@@ -1,12 +1,12 @@
 import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
-import "./pageSideBar.scss";
+import '../../scss/main.scss';
 
 const PageSideBar = (props) => {
   return (
-    <div className="App" style={{backgroundColor:props.backgroundcolor}}>
-      <Tabs>
+    <div className="App1" style={{backgroundColor:props.backgroundcolor}}>
+      <Tabs variant="fullWidth" scrollButtons="auto">
         <TabList>
           <Tab>
             <p>Hyderabadi Briyani</p>
