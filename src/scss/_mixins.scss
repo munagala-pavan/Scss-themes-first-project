@@ -19,3 +19,12 @@
     @content;
   }
 }
+
+@mixin listsFormat() {
+  width: 100%;
+  float: none;
+}
+
+// @mixin widthSize ($width:auto) {
+//   width: $width;
+// }

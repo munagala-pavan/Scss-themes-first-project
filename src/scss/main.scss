@@ -1,26 +1,28 @@
 @import "mixins";
 @import "variables";
+
+body {
+  background-color: $tabs-background;
+}
 #headers {
   list-style-type: none;
   @include padding(0px, 0px, 0px, 0px);
   @include margin(0px, 0px, 0px, 0px);
   overflow: hidden;
-  @include large-screens{
-    width: auto;
-    color:red;  
+  @include large-screens {
+    width: 100%;
   }
-  @include medium-screens{
-    width: auto;
-    color:red;  
+  @include medium-screens {
+    width: 100%;
+    float: none;
   }
-  @include small-screens{
-    width: auto;
-    color:red; 
+  @include small-screens {
+    width: 100%;
   }
 
   li {
     float: left;
-    
+
     a {
       display: block;
       color: $links-colors;
@@ -50,35 +52,37 @@
   }
 }
 
-
 .App1 {
   font-family: sans-serif;
   background: $tabs-background;
   color: $text-colors;
-
   box-sizing: border-box;
-   height: 75vh;
 
   .react-tabs {
+    @include medium-screens {
+      @include padding(0px, 0px, 0px, 0px);
+    }
+    @include large-screens {
+      @include padding(0px, 0px, 0px, 0px);
+    }
+    @include small-screens {
+      @include padding(0px, 0px, 0px, 0px);
+    }
+
     @include padding(80px, 0px, 0px, 80px);
     display: flex;
     @include margin(0px, 0px, 0px, 36px);
-    width: 1000px;
     color: $text-colors;
     background: $tabs-background;
-    @include large-screens{
+    @include large-screens {
       width: auto;
       max-width: 960px;
-      color:red;  
-      height: 15vh;
     }
-    @include medium-screens{
+    @include medium-screens {
       width: auto;
-      color:red;  
     }
-    @include small-screens{
+    @include small-screens {
       width: auto;
-      color:red; 
     }
   }
 
@@ -95,7 +99,7 @@
   .react-tabs__tab {
     height: 70px;
     list-style: none;
-    padding: 12px 6px;
+    @include padding(12px, 6px, 12px, 6px);
     cursor: pointer;
     color: transparentize($color: $text-colors, $amount: 0.2);
     @include padding(0px, 0px, 0px, 24px);
@@ -112,7 +116,7 @@
   .react-tabs__tab-panel {
     display: none;
     width: 800px;
-    @include padding(0px, 0px, 0px, 30px);
+    @include padding(0px, 10px, 0px, 30px);
   }
 
   .react-tabs__tab-panel--selected {
@@ -120,13 +124,19 @@
   }
   .panel-content {
     text-align: justify;
-    p {
-      
-    }
   }
 
   .list {
     li {
+      @include medium-screens {
+        @include listsFormat;
+      }
+      @include small-screens {
+        @include listsFormat;
+      }
+      @include large-screens {
+        @include listsFormat;
+      }
       width: 33.333333%;
       float: left;
     }
@@ -140,25 +150,25 @@
 }
 .footer {
   background-color: $common-colors;
-  // position: absolute;
-  // padding-top: 20px;
-  // padding-bottom: 25px;
-  // height: 100px;
-  @include large-screens{
+  margin-top: 6%;
+  @include padding(0px, 0px, 15px, 0px);
+  @include large-screens {
     width: auto;
-    color:red;  
   }
-  @include medium-screens{
+  @include medium-screens {
     width: auto;
-    color:red;  
   }
-  @include small-screens{
+  @include small-screens {
     width: auto;
-    color:red; 
   }
   .links a {
-    padding-right: 70px;
     @include padding(0px, 70px, 0px, 0px);
     color: $links-colors;
+    @include medium-screens {
+      @include padding(0px, 10px, 0px, 0px);
+    }
+    @include small-screens {
+      @include padding(0px, 15px, 0px, 0px);
+    }
   }
 }
