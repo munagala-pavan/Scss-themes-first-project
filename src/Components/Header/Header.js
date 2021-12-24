@@ -30,7 +30,7 @@ return(
       <option value="Coral" style={{backgroundColor:"Coral"}}>Coral</option>
       </select>
 </ul>
-      <PageSideBar/>
+      <PageSideBar theme={colors}/>
       <Footer styled={colors}/>
 </div>
 );

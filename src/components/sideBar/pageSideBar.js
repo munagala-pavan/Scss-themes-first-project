@@ -5,7 +5,7 @@ import '../../scss/main.scss';
 
 const PageSideBar = (props) => {
   return (
-    <div className="App1" style={{backgroundColor:props.backgroundcolor}}>
+    <div className="App1">
       <Tabs variant="fullWidth" scrollButtons="auto">
         <TabList>
           <Tab>
